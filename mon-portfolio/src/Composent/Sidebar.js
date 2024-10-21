@@ -28,8 +28,7 @@ function Sidebar() {
                 <ul className="nav_scroll">
                   <li><Link to="/">Home</Link></li>
                   <li><Link to="/About">About</Link></li>
-                  <li><Link to="/Service">Service</Link></li>
-                  <li><Link to="/Work">Work</Link></li>
+                  <li><Link to="/Services">Service</Link></li>
                   <li><Link to="/Contact">Contact</Link></li>
                 </ul>
               </nav>

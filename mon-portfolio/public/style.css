@@ -2829,7 +2829,10 @@ p.newsletter-text {
   transition: 0.5s;
   cursor: pointer;
 }
-
+.xs-sidebar-group {
+  display: block; /* Assurez-vous que cela n'est pas set à 'none' */
+  visibility: visible; /* Vérifiez également cette propriété */
+}
 .xs-sidebar-group .xs-overlay {
   left: 100%;
   top: 0;

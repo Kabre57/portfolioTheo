@@ -5,16 +5,16 @@ import { Link } from 'react-router-dom';
 function About() {
     return (
         <>
-            {/*==================================================*/}
+                           {/*==================================================*/}
             {/* Start solutek breadcrumb Area */}
             {/*==================================================*/}
-            <div className="breadcrumb-area about">
+            <div className="breadcumb-area">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            <div className="breadcrumb-content">
+                            <div className="breadcumb-content">
                                 <h4>About Us</h4>
-                                <ul className="breadcrumb-list">
+                                <ul className="breadcumb-list">
                                     <li><Link to="/">Home</Link></li>
                                     <li className="list-arrow">&lt;</li>
                                     <li>About Us</li>
@@ -27,6 +27,7 @@ function About() {
             {/*==================================================*/}
             {/* End solutek breadcrumb Area */}
             {/*==================================================*/}
+
 
             {/*==================================================*/}
             {/* Start solutek about us Area */}
