@@ -382,7 +382,28 @@ h3.blog-title a {
     bottom: -115px;
     left: 1px;
 }
-
+@media (max-width: 768px) {
+    .solutek_nav_manu {
+      display: block; /* Assurez-vous que le header est visible */
+      padding: 10px; /* Ajustez le padding pour les petits écrans */
+    }
+  
+    .sidebar {
+      width: 100%; /* Prendre toute la largeur sur mobile */
+      height: auto; /* Ajuster la hauteur si nécessaire */
+      position: relative; /* Position relative pour éviter les problèmes d'affichage */
+    }
+  
+    .sidebar.open {
+      transform: translateX(0); /* Afficher la sidebar */
+    }
+  
+    /* Cacher la sidebar par défaut sur mobile */
+    .sidebar {
+      display: none; /* Masquer par défaut */
+      transform: translateX(-100%); /* Masquer hors de l'écran */
+    }
+  }
 /*team-details*/
 .team-details-area .contact-info-content h4 {
     font-size: 16px;

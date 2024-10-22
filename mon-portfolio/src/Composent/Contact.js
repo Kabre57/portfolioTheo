@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Contact() {
     return (
         <>
-                   {/*==================================================*/}
+            {/*==================================================*/}
             {/* Start solutek breadcrumb Area */}
             {/*==================================================*/}
             <div className="breadcumb-area">
@@ -78,7 +78,7 @@ function Contact() {
                         <div className="col-lg-6">
                             <div className="contact-box">
                                 <div className="contact-video-icon">    
-                                    <a className="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true" href="https://www.youtube.com/watch?v=Wx48y_fOfiY">Play</a>
+                                    <a className="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true" href="https://youtube.com/shorts/ORAGkIxtJxI">Play</a>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +97,13 @@ function Contact() {
                     <div className="row">
                         <div className="col-lg-12">
                             <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255.55841644036047!2d-4.083996682340314!3d5.367565892912941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1c01198e5fe29%3A0x9f2cc8f5053c3c2d!2sSAPLED!5e1!3m2!1sfr!2sci!4v1729512468494!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255.55841644036047!2d-4.083996682340314!3d5.367565892912941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1c01198e5fe29%3A0x9f2cc8f5053c3c2d!2sSAPLED!5e1!3m2!1sfr!2sci!4v1729512468494!5m2!1sfr!2sci" 
+                                width="600" 
+                                height="450" 
+                                style={{ border: 0 }} // Correct usage of style
+                                allowFullScreen 
+                                loading="lazy" 
+                                referrerPolicy="no-referrer-when-downgrade">
                             </iframe>
                         </div>
                     </div>
@@ -129,7 +135,7 @@ function Contact() {
                                     <img src="assets/images/address2.png" alt="address2" />
                                 </div>
                                 <div className="solutek-btn">
-                                    <a href="tel:+44920090505">+44 920 090 505
+                                    <a href="tel:+44920090505">+225 07 57 39 01 57
                                         <div className="solutek-hover-btn hover-bx"></div>
                                         <div className="solutek-hover-btn hover-bx2"></div>
                                         <div className="solutek-hover-btn hover-bx3"></div>

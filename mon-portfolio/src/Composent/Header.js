@@ -8,9 +8,9 @@ function Header () {
             <div className="col-lg-8">
               <div className="header-info">
                 <ul>
-                  <li><i className="bi bi-geo-alt-fill"></i>New market Sandigo - California</li>
-                  <li className="exam-gmail"><i className="bi bi-envelope"></i>example@gmail.com</li>
-                  <li><i className="bi bi-alarm"></i>9.00 am - 5.00 pm</li>
+                  <li><i className="bi bi-geo-alt-fill"></i>Yopougnon zone industrielle - Côte d'Ivoire</li>
+                  <li className="exam-gmail"><i className="bi bi-envelope"></i>theogeoffroy5@gmail.com</li>
+                  <li><i className="bi bi-alarm"></i>08:00 H - 17:00 H</li>
                 </ul>
               </div>
             </div>

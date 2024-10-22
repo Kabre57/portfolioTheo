@@ -54,16 +54,12 @@ Tags:     agency, business, consulting, corporate, cyber security, finance, it a
   position: fixed !important;
   top: 0;
   width: 100%;
-  -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background: #050a1e !important;
   z-index: 500;
   padding: 0 100px 0;
   transition: 0.5s !important;
-  z-index: 500;
-  -webkit-animation: 300ms running fadeInDown;
-  animation: 500ms running fadeInUp;
-  animation-name: slideInDown;
+  animation: fadeInUp 500ms;
 }
 
 .sticky .logo {
@@ -73,8 +69,6 @@ Tags:     agency, business, consulting, corporate, cyber security, finance, it a
 .sticky.solutek_nav_manu:before {
   display: none;
 }
-
-/* solutek Menu Css*/
 
 nav.solutek_menu {
   align-items: center !important;
