@@ -2,8 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Header from "./Composent/Header";
-import Home from "./Composent/home";
-import Home1 from "./Composent/Home1";
+import Home from "./Composent/Home";
 import Mission from "./Composent/Mission";
 import About from "./Composent/About";
 import Services from "./Composent/Services";
@@ -20,11 +19,10 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Home1" element={<Home1 />} />
           <Route path="/Mission" element={<Mission />} />         
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Services" element={<Services />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
         <Footer />
         <Copyright />      

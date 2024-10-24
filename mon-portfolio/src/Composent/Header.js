@@ -7,49 +7,39 @@ function Header() {
             {/*==================================================*/}
             {/* Start Toptech Header Area */}
             {/*==================================================*/}
-            <div className="header-area style-foure" id="sticky-header">
+            <div className="header-area" id="sticky-header">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-2">
+                        <div className="col-lg-3">
                             <div className="header-logo">
-                                <Link to="/#">
-                                    <img src="assets/images/logo-4.png" alt="logo" />
-                                </Link>
+                                <Link to="/"><img src="assets/images/logo-1.png" alt="logo" /></Link>
                             </div>
                         </div>
-                        <div className="col-lg-8">
+                        <div className="col-lg-9">
                             <div className="header-menu">
                                 <ul>
                                 <li><Link to="/">Home</Link></li>
-                                <li><Link to="/Home1">Home1</Link></li>
-                                <li><Link to="/Services">Service</Link></li>
-                                <li><Link to="/Mission">Mission</Link></li>
-                                <li><Link to="/About">About</Link></li>                                                        
+                                <li><Link to="/About">About</Link></li>
+                                <li><Link to="/Service">Service</Link></li>
+                                <li><Link to="/Mission">Mission Vision</Link></li>
                                 <li><Link to="/Blog">Blog</Link></li>
-                                <li><Link to="/Contact">Contact</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
                                 </ul>
-                                <div className="header-button">
-                                    <Link to="/Contact">Get A Quote</Link>
+                                <div className="header-search-icon search-box-outer">
+                                    <Link to="#"><i className="fa-solid fa-magnifying-glass"></i></Link>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-2">
-                            <div className="social-media d-flex align-items-center">
-                                <h3 className="social-title">Social:</h3>
-                                <ul className="social-icon">
-                                    <li><a href="https://www.facebook.com/theo.sasuke"><i className="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://twitter.com/theogeoffroy5"><i className="fab fa-twitter"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/theo-kabre-8bb5a5169"><i className="fab fa-linkedin-in"></i></a></li>
-                                </ul>
+                                <div className="header-button">
+                                    <Link to="/contact">Get A Quote</Link>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             {/*==================================================*/}
-            {/* End Toptech Header Area Style foure */}
+            {/* End Toptech Header Area */}
             {/*==================================================*/}
-            
+
             {/*==================================================*/}
             {/* Start Main Menu Area */}
             {/*==================================================*/}
@@ -58,11 +48,11 @@ function Header() {
                     <nav className="header-menu">
                         <ul className="nav_scroll">
                             <li><Link to="/">Home</Link></li>
-                            <li><Link to="/Services">Service</Link></li>
-                            <li><Link to="/Mission">Mission</Link></li>
-                            <li><Link to="/About">About</Link></li>                                                        
+                            <li><Link to="/About">About</Link></li>
+                            <li><Link to="/Service">Service</Link></li>
+                            <li><Link to="/Mission">Mission Vision</Link></li>
                             <li><Link to="/Blog">Blog</Link></li>
-                            <li><Link to="/Contact">Contact</Link></li>
+                            <li><Link to="/contact">Contact</Link></li>
                         </ul>
                     </nav>
                 </div>
