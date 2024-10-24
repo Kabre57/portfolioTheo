@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function Header() {
+    useEffect(() => {
+        const handleScroll = () => {
+            const header = document.getElementById('sticky-header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <>
             {/*==================================================*/}
@@ -18,12 +32,12 @@ function Header() {
                         <div className="col-lg-9">
                             <div className="header-menu">
                                 <ul>
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/About">About</Link></li>
-                                <li><Link to="/Service">Service</Link></li>
-                                <li><Link to="/Mission">Mission Vision</Link></li>
-                                <li><Link to="/Blog">Blog</Link></li>
-                                <li><Link to="/contact">Contact</Link></li>
+                                    <li><Link to="/">Home</Link></li>
+                                    <li><Link to="/About">About</Link></li>
+                                    <li><Link to="/Services">Service</Link></li>
+                                    <li><Link to="/Mission">Mission</Link></li>
+                                    <li><Link to="/Blog">Blog</Link></li>
+                                    <li><Link to="/contact">Contact</Link></li>
                                 </ul>
                                 <div className="header-search-icon search-box-outer">
                                     <Link to="#"><i className="fa-solid fa-magnifying-glass"></i></Link>
@@ -49,8 +63,8 @@ function Header() {
                         <ul className="nav_scroll">
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/About">About</Link></li>
-                            <li><Link to="/Service">Service</Link></li>
-                            <li><Link to="/Mission">Mission Vision</Link></li>
+                            <li><Link to="/Services">Service</Link></li>
+                            <li><Link to="/Mission">Mission</Link></li>
                             <li><Link to="/Blog">Blog</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
                         </ul>

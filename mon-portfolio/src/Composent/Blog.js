@@ -15,8 +15,8 @@ function Blog() {
                 <h4>Blog </h4>
                 <ul>
                   <li><Link to="index.html">Home</Link></li>
-                  <li>-</li>
-                  <li>Blog</li>
+                  <li>&</li>
+                  <li>Blog </li>
                 </ul>
               </div>
             </div>
@@ -28,7 +28,7 @@ function Blog() {
       {/*==================================================*/}
 
       {/*==================================================*/}
-      {/* Start Toptech Blog  */}
+      {/* Start Toptech Blog List */}
       {/*==================================================*/}
       <div className="blog-grid-area">
         <div className="container">

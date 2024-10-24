@@ -45,7 +45,7 @@ function Footer() {
                                     <li><Link to="#">Help Center</Link></li>
                                     <li><Link to="#">Terms & Conditions</Link></li>
                                     <li><Link to="#">Privacy Policy</Link></li>
-                                    <li><Link to="#">Contact Us</Link></li>
+                                    <li><Link to="/Contact">Contact Us</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -56,8 +56,8 @@ function Footer() {
                                 </div>
                                 <div className="footer-widget-menu">
                                     <ul>
-                                        <li><i className="fa-solid fa-phone-flip"></i> +258 (549) 2158 3215</li>
-                                        <li><i className="fa-regular fa-envelope"></i> support@example.com</li>
+                                        <li><i className="fa-solid fa-phone-flip"></i> +225 07 57 39 01 57</li>
+                                        <li><i className="fa-regular fa-envelope"></i> Info@itservice.com</li>
                                         <li className="footer-descrip">2589 Dorland Street Luke INUA <br /> Berlin, Germany</li>
                                     </ul>
                                 </div>
