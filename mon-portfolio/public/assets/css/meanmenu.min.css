@@ -1,13 +1,15 @@
 a.meanmenu-reveal{display:none}
 .mean-container .mean-bar {
-  background: #ff3b00;
+  background: #0c5adb;
   float: left;
   min-height: 60px;
   padding: 4px 0 0;
   position: relative;
   width: 100%;
   z-index: 999;
-  text-transform: capitalize;
+}
+.mobile-menu.mean-container {
+  overflow: hidden;
 }
 .mean-container a.meanmenu-reveal{width:22px;height:22px;padding:18px;top:0;right:0;cursor:pointer;color:#fff;text-decoration:none;font-size:16px;text-indent:-9999em;line-height:22px;font-size:1px;display:block;font-family:Arial,Helvetica,sans-serif;font-weight:700;float: right;}
 .mean-container a.meanmenu-reveal span{display:block;background:#fff;height:3px;margin-top:3px}
@@ -85,9 +87,6 @@ a.meanmenu-reveal{display:none}
   top: 12px;
 }
 
-.nav_scroll i {
-	font-size: 10px;
-}
 
 /* -------------------------------
 39. Mobile menu
@@ -124,12 +123,12 @@ a.meanmenu-reveal{display:none}
   background: #fff;
 }
 .mean-container .mean-bar::before {
-	color: #fff;
-	content: "solutek";
-	font-size: 28px;
-	font-weight: 600;
-	left: 10px;
-	position: absolute;
-	top: 17px;
+    color: #fff;
+    content: "Toptech";
+    font-size: 28px;
+    font-weight: 600;
+    left: 10px;
+    position: absolute;
+    top: 18px;
 }
 

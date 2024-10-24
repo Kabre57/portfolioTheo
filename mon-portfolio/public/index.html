@@ -1,91 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Theo Geogoffroy</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" sizes="56x56" href="%PUBLIC_URL%/assets/images/fav-icon/icon.png" />
-    
-    <!-- CSS Links -->
-    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/animate.css" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/animated-text.css" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/all.min.css" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/flaticon.css" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/theme-default.css" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/meanmenu.min.css" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/style.css" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/owl.transitions.css" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/splide.min.css" />
-    <link rel="stylesheet" href="venobox/venobox.css" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/responsive.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-    
-    <script src="%PUBLIC_URL%/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>IT-Solution</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="56x56" href="assets/images/fav-icon/icon.png">
+	<!-- bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all">
+	<!-- carousel CSS -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css" media="all">
+	<!-- animate CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css" type="text/css" media="all">
+	<!-- animated-text CSS -->
+	<link rel="stylesheet" href="assets/css/animated-text.css" type="text/css" media="all">
+	<!-- font-awesome CSS -->
+	<link rel="stylesheet" href="assets/css/all.min.css" type="text/css" media="all">
+	<!-- theme-default CSS -->
+	<link rel="stylesheet" href="assets/css/theme-default.css" type="text/css" media="all">
+	<!-- meanmenu CSS -->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css" type="text/css" media="all">
+	<!-- transitions CSS -->
+	<link rel="stylesheet" href="assets/css/owl.transitions.css" type="text/css" media="all">
+	<!-- venobox CSS -->
+	<link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="all">
+	<!-- bootstrap icons -->
+	<link rel="stylesheet" href="assets/css/bootstrap-icons.css" type="text/css" media="all">
+	<!-- Main Style CSS -->
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
+	<!-- responsive CSS -->
+	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all">
+	<!-- Coustom Animation CSS -->
+	<link rel="stylesheet" href="assets/css/coustom-animation.css" type="text/css" media="all">
+	<!-- modernizr js -->
+	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
 </head>
+
 <body>
-    <!-- Loader -->
-    <div class="loader-wrapper">
-        <div class="loader"></div>
-        <div class="loader-section left-section"></div>
-        <div class="loader-section right-section"></div>
-    </div>
+	
+<!-- loder -->
+<div class="loader-wrapper">
+	<span class="loader"></span>
+	<div class="loder-section left-section"></div>
+	<div class="loder-section right-section"></div>
+</div>
     
     <noscript>You need to enable JavaScript to run this app.</noscript>
     
     <div id="root"></div>
     
-    <!-- Scripts -->
-    <script src="%PUBLIC_URL%/assets/js/vendor/jquery-3.6.2.min.js"></script>
-    <script src="%PUBLIC_URL%/assets/js/bootstrap.min.js"></script>
-    <script src="%PUBLIC_URL%/assets/js/owl.carousel.min.js"></script>
-    <script src="%PUBLIC_URL%/assets/js/jquery.counterup.min.js"></script>
-    <script src="%PUBLIC_URL%/assets/js/waypoints.min.js"></script>
-    <script src="%PUBLIC_URL%/assets/js/wow.js"></script>
-    <script src="%PUBLIC_URL%/assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="%PUBLIC_URL%/venobox/venobox.js"></script>
-    <script src="%PUBLIC_URL%/assets/js/animated-text.js"></script>
-    <script src="%PUBLIC_URL%/venobox/venobox.min.js"></script>
-    <script src="%PUBLIC_URL%/assets/js/isotope.pkgd.min.js"></script>
-    <script src="%PUBLIC_URL%/assets/js/jquery.meanmenu.js"></script>
-    <script src="%PUBLIC_URL%/assets/js/jquery.scrollUp.js"></script>
-    <script src="%PUBLIC_URL%/assets/js/jquery.barfiller.js"></script>
-    <script src="%PUBLIC_URL%/assets/js/typed.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="%PUBLIC_URL%/assets/js/vanilla-tilt.min.js"></script>
-    <script src="%PUBLIC_URL%/assets/js/splide.min.js"></script>
-    
-    <!-- Splide Carousel Initialization -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Masquer le loader
-            const loader = document.querySelector('.loader-wrapper');
-            if (loader) {
-                loader.style.display = 'none';
-            }
+   
 
-            // Initialisation de Splide
-            if (typeof Splide !== 'undefined') {
-                var splide = new Splide('.splide', {
-                    autoWidth: true,
-                    type: 'loop',
-                    perPage: 2,
-                    focus: 0,
-                    omitEnd: true,
-                    paginationDirection: 'ltr',
-                    direction: 'ttb',
-                    height: '660px',
-                    margin: 30,
-                });
+<!--==================================================-->
+<!-- Start Toptech Scroll Up-->
+<!--==================================================-->
+<div class="prgoress_indicator active-progress">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 212.78;"></path>
+    </svg>
+</div>
+<!--==================================================-->
+<!-- End Toptech Scroll Up-->
+<!--==================================================-->
 
-                splide.mount();
-            } else {
-                console.error("Splide is not defined. Ensure the script is loaded correctly.");
-            }
-        });
-    </script>
+
+<!-- jquery js -->
+<script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
+<!-- bootstrap js -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- carousel js -->
+<script src="assets/js/owl.carousel.min.js"></script>
+<!-- animated-text js -->
+<script src="assets/js/animated-text.js"></script>
+<!-- wow js -->
+<script src="assets/js/wow.js"></script>
+<!-- ajax-mail js -->
+<script src="assets/js/ajax-mail.js"></script>
+<!-- imagesloaded js -->
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<!-- venobox js -->
+<script src="venobox/venobox.js"></script>
+<!--  animated-text js -->
+<script src="assets/js/animated-text.js"></script>
+<!-- venobox min js -->
+<script src="venobox/venobox.min.js"></script>
+<!-- jquery meanmenu js -->
+<script src="assets/js/jquery.meanmenu.js"></script>
+<!-- theme js -->
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/main.js"></script>
+<!-- Cousom carousel js -->
+<script src="assets/js/coustom-carousel.js"></script>
+<!-- odometer js -->
+<script src="assets/js/scroll-up.js"></script>
+<script src="assets/js/main.js"></script>
+
+
 </body>
 </html>

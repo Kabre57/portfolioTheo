@@ -1,32 +1,76 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Header () {
+function Header() {
     return (
-        <div className="top-header-area">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-8">
-              <div className="header-info">
-                <ul>
-                  <li><i className="bi bi-geo-alt-fill"></i>Yopougnon zone industrielle - Côte d'Ivoire</li>
-                  <li className="exam-gmail"><i className="bi bi-envelope"></i>theogeoffroy5@gmail.com</li>
-                  <li><i className="bi bi-alarm"></i>08:00 H - 17:00 H</li>
-                </ul>
-              </div>
+        <>
+            {/*==================================================*/}
+            {/* Start Toptech Header Area */}
+            {/*==================================================*/}
+            <div className="header-area style-foure" id="sticky-header">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-lg-2">
+                            <div className="header-logo">
+                                <Link to="/#">
+                                    <img src="assets/images/logo-4.png" alt="logo" />
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="col-lg-8">
+                            <div className="header-menu">
+                                <ul>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/Home1">Home1</Link></li>
+                                <li><Link to="/Services">Service</Link></li>
+                                <li><Link to="/Mission">Mission</Link></li>
+                                <li><Link to="/About">About</Link></li>                                                        
+                                <li><Link to="/Blog">Blog</Link></li>
+                                <li><Link to="/Contact">Contact</Link></li>
+                                </ul>
+                                <div className="header-button">
+                                    <Link to="/Contact">Get A Quote</Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-2">
+                            <div className="social-media d-flex align-items-center">
+                                <h3 className="social-title">Social:</h3>
+                                <ul className="social-icon">
+                                    <li><a href="https://www.facebook.com/theo.sasuke"><i className="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://twitter.com/theogeoffroy5"><i className="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/theo-kabre-8bb5a5169"><i className="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="col-lg-4">
-              <div className="top-header-social-icon">
-                <ul>
-                  <li><a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#" aria-label="Twitter"><i className="fab fa-twitter"></i></a></li>
-                  <li><a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a></li>
-                  <li><a href="#" aria-label="Pinterest"><i className="fab fa-pinterest-p"></i></a></li>
-                </ul>
-              </div>
+            {/*==================================================*/}
+            {/* End Toptech Header Area Style foure */}
+            {/*==================================================*/}
+            
+            {/*==================================================*/}
+            {/* Start Main Menu Area */}
+            {/*==================================================*/}
+            <div className="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
+                <div className="mobile-menu">
+                    <nav className="header-menu">
+                        <ul className="nav_scroll">
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/Services">Service</Link></li>
+                            <li><Link to="/Mission">Mission</Link></li>
+                            <li><Link to="/About">About</Link></li>                                                        
+                            <li><Link to="/Blog">Blog</Link></li>
+                            <li><Link to="/Contact">Contact</Link></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
+            {/*==================================================*/}
+            {/* End Main Menu Area */}
+            {/*==================================================*/}
+        </>
     );
 }
 

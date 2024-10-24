@@ -12,102 +12,99 @@ function Footer() {
     };
 
     return (
-        <div className="footer-area">
-            <div className="container">
-                <div className="row footer">
-                    <div className="col-lg-4 col-md-6 col-sm-6">
-                        <div className="footer-widget">
+        <>
+            {/*==================================================*/}
+            {/* Start Toptech Footer Area Style One */}
+            {/*==================================================*/}
+            <div className="footer-area style-foure">
+                <div className="container">
+                    <div className="row footer-top">
+                        <div className="col-lg-6 col-md-6">
                             <div className="footer-logo">
-                                <Link to="/">
-                                    <img src="assets/images/footer-logo.png" alt="footer-logo" />
-                                </Link>
+                                <Link to="index.html"><img src="assets/images/logo5.png" alt="logo-5" /></Link>
                             </div>
-                            <p className="footer-widget-text">
-                                Globally monetize plug-and-play data it solu monotonectally disseminate oriented busine multifunctional mind design.
-                            </p>
-                            <div className="footer-social">
-                                <div className="footer-widget-social">
-                                    <a href="#"><i className="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i className="fab fa-twitter"></i></a>
-                                    <a href="#"><i className="fab fa-linkedin-in"></i></a>
-                                    <a href="#"><i className="fab fa-pinterest-p"></i></a>
+                        </div>
+                        <div className="col-lg-6 col-md-6">
+                            <div className="footer-top-social-icon">
+                                <ul>
+                                    <li><a href="#"><i className="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i className="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i className="fa-brands fa-pinterest-p"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row footer-bottom">
+                        <div className="col-lg-3 col-md-6">
+                            <div className="footer-widget-title">
+                                <h4>Company</h4>
+                            </div>
+                            <div className="footer-widget-menu">
+                                <ul>
+                                    <li><Link to="#">Help Center</Link></li>
+                                    <li><Link to="#">Terms & Conditions</Link></li>
+                                    <li><Link to="#">Privacy Policy</Link></li>
+                                    <li><Link to="#">Contact Us</Link></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6">
+                            <div className="footer-widget-content">
+                                <div className="footer-widget-title">
+                                    <h4>Get In Touch</h4>
+                                </div>
+                                <div className="footer-widget-menu">
+                                    <ul>
+                                        <li><i className="fa-solid fa-phone-flip"></i> +258 (549) 2158 3215</li>
+                                        <li><i className="fa-regular fa-envelope"></i> support@example.com</li>
+                                        <li className="footer-descrip">2589 Dorland Street Luke INUA <br /> Berlin, Germany</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-lg-2 col-md-6 col-sm-6">
-                        <div className="footer-widget left">
-                            <div className="widget-title">
-                                <h2>Useful Links</h2>
+                        <div className="col-lg-3 col-md-6">
+                            <div className="footer-widget-content">
+                                <div className="footer-widget-title">
+                                    <h4>Working Time</h4>
+                                </div>
+                                <div className="footer-widget-menu">
+                                    <ul>
+                                        <li>Mon - Fri: 9:00 AM - 5:00 PM</li>
+                                        <li>Saturday: 10:00 AM - 6:00 PM</li>
+                                        <li>Sunday & Friday Closed</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <ul>
-                                <li><Link to="/about-us">About Company</Link></li>
-                                <li><Link to="/team">Meet Our Team</Link></li>
-                                <li><Link to="/blog-grid">Latest Blog</Link></li>
-                                <li><Link to="/contact">Contact Us</Link></li>
-                                <li><Link to="/testimonial">Testimonials</Link></li>
-                            </ul>
                         </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 col-sm-6">
-                        <div className="footer-widget left">
-                            <div className="widget-title">
-                                <h2>Services</h2>
-                            </div>
-                            <ul>
-                                <li><Link to="/about-us">About Company</Link></li>
-                                <li><Link to="/team">Meet Our Team</Link></li>
-                                <li><Link to="/blog-grid">Latest Blog</Link></li>
-                                <li><Link to="/contact">Contact Us</Link></li>
-                                <li><Link to="/faq">FAQ</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 col-sm-6">
-                        <div className="footer-widget-newsletter">
-                            <div className="widget-title">
-                                <h2>Newsletter</h2>
-                            </div>
-                            <p className="newsletter-text">
-                                Globally monetize plug-and-play data it solu monotonectally disseminate oriented busine multifunctional mind design.
-                            </p>
-                            <div className="Subscribe-form2">
+                        <div className="col-lg-3 col-md-6">
+                            <div className="footer-widget-content">
+                                <div className="footer-widget-title">
+                                    <h4>Newsletter</h4>
+                                </div>
+                                <p className="f-desc-2">I’m okay with getting emails and having that tracked to improve my experience</p>
                                 <form onSubmit={handleSubscribe}>
-                                    <div className="form-field2">
-                                        <input
-                                            type="email"
-                                            name="EMAIL"
-                                            placeholder="Enter Your E-mail"
+                                    <div className="footer-newslatter-box">
+                                        <input 
+                                            type="email" 
+                                            name="Email" 
+                                            placeholder="Your E-Mail" 
                                             value={email}
                                             onChange={(e) => setEmail(e.target.value)}
-                                            required
+                                            required 
                                         />
-                                        <button className="subscribe-button" type="submit">
-                                            <i className="bi bi-send"></i>
-                                        </button>
+                                        <button type="submit">SIGN UP</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="row copyright">
-                    <div className="col-lg-6 col-md-6 col-sm-6">
-                        <div className="copyright-text">
-                            <p>© Copyright 2024 By Solutek</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-md-6 col-sm-6">
-                        <div className="copyright-list">
-                            <ul>
-                                <li><Link to="/privacy-policy">Privacy Policy</Link></li>
-                                <li><Link to="/supports">Supports</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
+            {/*==================================================*/}
+            {/* End Toptech Footer Area */}
+            {/*==================================================*/}
+        </>
     );
 }
 
