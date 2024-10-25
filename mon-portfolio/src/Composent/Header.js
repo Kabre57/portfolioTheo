@@ -40,7 +40,7 @@ function Header() {
                                     <li><Link to="/contact">Contact</Link></li>
                                 </ul>
                                 <div className="header-search-icon search-box-outer">
-                                    <Link to="#"><i className="fa-solid fa-magnifying-glass"></i></Link>
+                                    <Link to="/"><i className="fa-solid fa-magnifying-glass"></i></Link>
                                 </div>
                                 <div className="header-button">
                                     <Link to="/contact">Get A Quote</Link>

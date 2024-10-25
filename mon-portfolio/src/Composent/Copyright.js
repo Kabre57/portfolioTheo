@@ -17,9 +17,9 @@ function Copyright() {
 			<div class="col-lg-6 col-md-6">
 				<div class="footer-botton-list">
 					<ul>
-						<li><a href="#">Privacy & Terms.</a></li>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Contact Us</a></li>
+						<Link to="/PrivacyTerms">Privacy & Terms.</Link>
+						<Link to="/Faqs">FAQ</Link>
+						<Link to="/Contact">Contact Us</Link>
 					</ul>
 				</div>
 			</div>

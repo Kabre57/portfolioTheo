@@ -68,7 +68,7 @@ function Mission() {
                   </div>
                 </div>
                 <div className="mission-button">
-                  <a href="#">Find out more</a>
+                <Link to="/About">Find out more</Link>
                 </div>
               </div>
             </div>
@@ -104,7 +104,7 @@ function Mission() {
                   </div>
                 </div>
                 <div className="mission-button">
-                  <a href="#">Find out more</a>
+                <Link to="/About">Find out more</Link>
                 </div>
               </div>
             </div>

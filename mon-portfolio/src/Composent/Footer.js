@@ -27,10 +27,10 @@ function Footer() {
                         <div className="col-lg-6 col-md-6">
                             <div className="footer-top-social-icon">
                                 <ul>
-                                    <li><a href="#"><i className="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#"><i className="fa-brands fa-linkedin-in"></i></a></li>
-                                    <li><a href="#"><i className="fa-brands fa-pinterest-p"></i></a></li>
+                                    <li><a href="https://www.facebook.com/theo.sasuke"><i className="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="https://twitter.com/theogeoffroy5"><i className="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/theo-kabre-8bb5a5169"><i className="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="www.pinterest.com/geoffroytheo2"><i className="fa-brands fa-pinterest-p"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -57,8 +57,8 @@ function Footer() {
                                 <div className="footer-widget-menu">
                                     <ul>
                                         <li><i className="fa-solid fa-phone-flip"></i> +225 07 57 39 01 57</li>
-                                        <li><i className="fa-regular fa-envelope"></i> Info@itservice.com</li>
-                                        <li className="footer-descrip">2589 Dorland Street Luke INUA <br /> Berlin, Germany</li>
+                                        <li><i className="fa-regular fa-envelope"></i> theogeoffroy5@gmail.com</li>
+                                        <li className="footer-descrip">yopognon zone industrielle <br /> abidjan, côte d'ivoire</li>
                                     </ul>
                                 </div>
                             </div>

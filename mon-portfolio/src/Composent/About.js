@@ -220,9 +220,9 @@ function About() {
                   </div>
                 </div>
                 <div className="toptech-button inner-style">
-                  <a href="#">
-                    More About<i className="bi bi-arrow-right-short"></i>
-                  </a>
+                <Link to="/About">More About
+                <i className="bi bi-arrow-right-short"></i> 
+                </Link>
                 </div>
               </div>
             </div>
@@ -247,11 +247,11 @@ function About() {
               </div>
             </div>
             <div className="col-lg-5">
-              <div className="toptech-button style-one">
-                <a href="#">
-                  All Members<i className="bi bi-arrow-right-circle-fill"></i>
-                </a>
-              </div>
+        <div className="toptech-button style-one">
+            <Link to="/team">  {/* Assurez-vous que "/team" correspond à la route définie pour le composant Team */}
+                All Members<i className="bi bi-arrow-right-circle-fill"></i>
+            </Link>
+        </div>
             </div>
           </div>
           <div className="row">
@@ -281,22 +281,22 @@ function About() {
                   <div className="team-social-icon">
                     <ul>
                       <li>
-                        <a href="#">
+                        <a href="https://www.facebook.com/theo.sasuke">
                           <i className="fab fa-facebook-f"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://twitter.com/theogeoffroy5">
                           <i className="fab fa-twitter"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://www.instagram.com/geoffroy_kabre">
                           <i className="fab fa-instagram"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="www.pinterest.com/geoffroytheo2">
                           <i className="fa-brands fa-pinterest-p"></i>
                         </a>
                       </li>
@@ -330,24 +330,24 @@ function About() {
                     </div>
                   </div>
                   <div className="team-social-icon">
-                    <ul>
+                  <ul>
                       <li>
-                        <a href="#">
+                        <a href="https://www.facebook.com/theo.sasuke">
                           <i className="fab fa-facebook-f"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://twitter.com/theogeoffroy5">
                           <i className="fab fa-twitter"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://www.instagram.com/geoffroy_kabre">
                           <i className="fab fa-instagram"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="www.pinterest.com/geoffroytheo2">
                           <i className="fa-brands fa-pinterest-p"></i>
                         </a>
                       </li>
@@ -380,24 +380,24 @@ function About() {
                     </div>
                   </div>
                   <div className="team-social-icon">
-                    <ul>
+                  <ul>
                       <li>
-                        <a href="#">
+                        <a href="https://www.facebook.com/theo.sasuke">
                           <i className="fab fa-facebook-f"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://twitter.com/theogeoffroy5">
                           <i className="fab fa-twitter"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://www.instagram.com/geoffroy_kabre">
                           <i className="fab fa-instagram"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="www.pinterest.com/geoffroytheo2">
                           <i className="fa-brands fa-pinterest-p"></i>
                         </a>
                       </li>
@@ -430,24 +430,24 @@ function About() {
                     </div>
                   </div>
                   <div className="team-social-icon">
-                    <ul>
+                  <ul>
                       <li>
-                        <a href="#">
+                        <a href="https://www.facebook.com/theo.sasuke">
                           <i className="fab fa-facebook-f"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://twitter.com/theogeoffroy5">
                           <i className="fab fa-twitter"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://www.instagram.com/geoffroy_kabre">
                           <i className="fab fa-instagram"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="www.pinterest.com/geoffroytheo2">
                           <i className="fa-brands fa-pinterest-p"></i>
                         </a>
                       </li>

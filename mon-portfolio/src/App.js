@@ -8,6 +8,9 @@ import Mission from "./Composent/Mission";
 import About from "./Composent/About";
 import Services from "./Composent/Services";
 import Blog from "./Composent/Blog";
+import Faqs from "./Composent/Faqs";
+import PrivacyTerms from "./Composent/PrivacyTerms";
+import Team from "./Composent/Team";
 import Contact from "./Composent/Contact";
 import Footer from "./Composent/Footer";
 import Copyright from "./Composent/Copyright";
@@ -19,17 +22,20 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <ScrollIndicator />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/Mission" element={<Mission />} />         
+          <Route path="/Faqs" element={<Faqs />} />         
+          <Route path="/PrivacyTerms" element={<PrivacyTerms />} />         
+          <Route path="/Team" element={<Team />} />         
           <Route path="/Blog" element={<Blog />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
         <Footer />
-        <Copyright />      
+        <Copyright />
+        <ScrollIndicator />      
       </Router>
     </div>
   );
