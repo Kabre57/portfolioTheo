@@ -81,7 +81,9 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     color: #fff;
     transition: 0.5s;
 }
-
+.header-spacing {
+    margin-bottom: 20px; /* Ajustez cette valeur selon l'espacement souhaité */
+}
 .header-menu ul li a:hover{
     color:#0c5adb;
 }

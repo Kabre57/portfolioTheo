@@ -21,21 +21,21 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
+        <Header className="header-spacing" />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Services" element={<Services />} />
-          <Route path="/Mission" element={<Mission />} />         
-          <Route path="/Faqs" element={<Faqs />} />         
-          <Route path="/PrivacyTerms" element={<PrivacyTerms />} />         
-          <Route path="/Team" element={<Team />} />         
+          <Route path="/Mission" element={<Mission />} />
+          <Route path="/Faqs" element={<Faqs />} />
+          <Route path="/PrivacyTerms" element={<PrivacyTerms />} />
+          <Route path="/Team" element={<Team />} />
           <Route path="/Blog" element={<Blog />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
         <Footer />
         <Copyright />
-        <ScrollIndicator />      
+        <ScrollIndicator />
       </Router>
     </div>
   );
