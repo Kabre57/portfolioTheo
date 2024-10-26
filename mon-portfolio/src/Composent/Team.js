@@ -5,18 +5,18 @@ function Team() {
     return (
         <>
             {/*==================================================*/}
-            {/* Start Toptech Breadcrumb Area */}
+            {/* Start Toptech Breadcumb Area */}
             {/*==================================================*/}
-            <div className="breadcrumb-area">
+            <div className="breadcumb-area">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            <div className="breadcrumb-content">
-                                <h4>Team </h4>
+                            <div className="breadcumb-content">
+                                <h4>Our Team</h4>
                                 <ul>
                                     <li><Link to="/">Home</Link></li>
-                                    <li> & </li>
-                                    <li>Team </li>
+                                    <li>&gt;</li>
+                                    <li>Team</li>
                                 </ul>
                             </div>
                         </div>
@@ -24,170 +24,118 @@ function Team() {
                 </div>
             </div>
             {/*==================================================*/}
-            {/* End Toptech Breadcrumb Area */}
+            {/* End Toptech Breadcumb Area */}
             {/*==================================================*/}
 
             {/*==================================================*/}
-            {/* Start Toptech Team Details Area */}
+            {/* Start Toptech Team Area Style One */}
             {/*==================================================*/}
-            <div className="team-details-area">
+            <div className="team-area style-one inner">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6">
+                            <div className="section-title left style-two">
+                                <h4>Dedicated Team</h4>
+                                <h1>Meet Our Dedicated Member</h1>
+                                <h1>For Any Enquiry</h1>
+                            </div>
+                        </div>
+                        <div className="col-lg-6">
+                            <div className="toptech-button style-one">
+                                <Link to="#">All Member<i className="bi bi-arrow-right-circle-fill"></i></Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        {[
+                            { name: "Arianna Bibi", role: "Web Developer", img: "team1.jpg" },
+                            { name: "Nazmul Hossen", role: "UI/UX Designer", img: "team2.jpg" },
+                            { name: "Roman Soltana", role: "Manager", img: "team3.jpg" },
+                            { name: "Ghaura Mogibor", role: "UI/UX Developer", img: "team4.jpg" }
+                        ].map(member => (
+                            <div className="col-lg-3 col-md-6" key={member.name}>
+                                <div className="single-team-box">
+                                    <div className="team-thumb">
+                                        <img src={`assets/images/home-1/${member.img}`} alt={member.name} />
+                                    </div>
+                                    <div className="team-content">
+                                        <div className="team-bio">
+                                            <h4>{member.name}</h4>
+                                            <p>{member.role}</p>
+                                        </div>
+                                        <div className="team-social-icon">
+                                            <ul>
+                                                <li><Link to="#"><i className="fa-brands fa-facebook-f"></i></Link></li>
+                                                <li><Link to="#"><i className="fa-brands fa-twitter"></i></Link></li>
+                                                <li><Link to="#"><i className="fa-brands fa-youtube"></i></Link></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+            {/*==================================================*/}
+            {/* End Toptech Team Area Style One */}
+            {/*==================================================*/}
+
+            {/*==================================================*/}
+            {/* Start Toptech Subscribe Area Style Three */}
+            {/*==================================================*/}
+            <div className="subscribe-area style-three">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6">
-                            <div className="team-thumb">
-                                <img src="assets/images/team/team-details.jpg" alt="Team Member" />
+                            <div className="section-title left inner-style">
+                                <h1>Get Latest Update from Toptech</h1>
+                                <h1>Stay Connect with Us</h1>
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <div className="team-details-right">
-                                <div className="team-details-content">
-                                    <div className="team-member-title">
-                                        <h4>Anowar Hossin Omio</h4>
-                                        <p>Dream-IT Founder & CEO</p>
-                                    </div>
-                                    <p className="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor creative
-                                    labore et dolore magna aliqua ipsum suspendisse ultrices gravida commodo viverra accu
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <form action="#">
+                                <div className="single-subscribe-box">
+                                    <input type="text" name="Email" placeholder="Enter your Email" required />
+                                    <button type="submit">Subscribe</button>
                                 </div>
-                                <div className="row add-bg">
-                                    <div className="col-lg-6 col-md-6">
-                                        <div className="contact-info-box">
-                                            <div className="contact-info-icon">
-                                                <i className="fa-solid fa-phone"></i>
-                                            </div>
-                                            <div className="contact-info-content">
-                                                <h4>Call us Any time</h4>
-                                                <p>+123 (4567) 890</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-6">
-                                        <div className="contact-info-box">
-                                            <div className="contact-info-icon">
-                                                <i className="fa-regular fa-envelope"></i>
-                                            </div>
-                                            <div className="contact-info-content">
-                                                <h4>Send E-Mail</h4>
-                                                <p>info@gmail.com</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="team-details-social-icon">
-                                    <ul>
-                                        <li>Social Media</li>
-                                        <li><Link to="#"><i className="fa-brands fa-facebook-f"></i></Link></li>
-                                        <li><Link to="#"><i className="fa-brands fa-twitter"></i></Link></li>
-                                        <li><Link to="#"><i className="fa-brands fa-linkedin-in"></i></Link></li>
-                                        <li><Link to="#"><i className="fa-brands fa-pinterest-p"></i></Link></li>
-                                    </ul>
-                                </div>
-                                <div className="team-details-location-box">
-                                    <div className="contact-info-icon">
-                                        <i className="bi bi-geo-alt-fill"></i>
-                                    </div>
-                                    <div className="contact-info-content">
-                                        <h4>Location</h4>
-                                        <p>21 King Street 5th Floor Hamilton, Ontario Canada</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-6">
-                            <div className="team-details-skills">
-                                <h4>My Skills</h4>
-                                <div className="wrapper">
-                                    <div className="skill">
-                                        <p>Design Analytics</p>
-                                        <div className="skill-bar skill1 wow slideInLeft animated animated" style={{ visibility: 'visible', animationName: 'slideInLeft' }}>
-                                            <span className="skill-count1">95%</span>
-                                        </div>
-                                    </div>
-                                    <div className="skill">
-                                        <p>Software Development</p>
-                                        <div className="skill-bar skill2 wow slideInLeft animated animated" style={{ visibility: 'visible', animationName: 'slideInLeft' }}>
-                                            <span className="skill-count2">85%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="team-details-skills">
-                                <h4>Success Project</h4>
-                                <div className="wrapper">
-                                    <div className="skill">
-                                        <p>UI/UX Design & Development</p>
-                                        <div className="skill-bar skill1 wow slideInLeft animated animated" style={{ visibility: 'visible', animationName: 'slideInLeft' }}>
-                                            <span className="skill-count1">95%</span>
-                                        </div>
-                                    </div>
-                                    <div className="skill">
-                                        <p>Content Strategy</p>
-                                        <div className="skill-bar skill2 wow slideInLeft animated animated" style={{ visibility: 'visible', animationName: 'slideInLeft' }}>
-                                            <span className="skill-count2">85%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
             {/*==================================================*/}
-            {/* End Toptech Team Details Area */}
+            {/* End Toptech Subscribe Area Style Three */}
             {/*==================================================*/}
 
             {/*==================================================*/}
-            {/* Start Toptech Brand Area Style Two */}
+            {/* Start Toptech Process Area Style Three */}
             {/*==================================================*/}
-            <div className="brand-area style-two">
+            <div className="process-area style-three inner">
                 <div className="container">
-                    <div className="row">
-                        <div className="brand-list-1 owl-carousel">
-                            <div className="col-lg-12">
-                                <div className="single-brand-box">
-                                    <div className="brand-thumb">
-                                        <img src="assets/images/home-2/brand-1.png" alt="Brand 1" />
+                    <div className="row add-bg">
+                        {[
+                            { title: "Account Register", description: "Opportunities before extensible market Dramatically pursue us", img: "process-1.png" },
+                            { title: "Add New Card", description: "Opportunities before extensible market Dramatically pursue us", img: "process-2.png" },
+                            { title: "Verified Account", description: "Opportunities before extensible market Dramatically pursue us", img: "process-3.png" }
+                        ].map(process => (
+                            <div className="col-lg-4 col-md-6" key={process.title}>
+                                <div className="single-process-box">
+                                    <div className="process-icon">
+                                        <img src={`assets/images/home-3/${process.img}`} alt={process.title} />
+                                    </div>
+                                    <div className="process-content">
+                                        <h4>{process.title}</h4>
+                                        <p>{process.description}</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-12">
-                                <div className="single-brand-box">
-                                    <div className="brand-thumb">
-                                        <img src="assets/images/home-2/brand-2.png" alt="Brand 2" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-12">
-                                <div className="single-brand-box">
-                                    <div className="brand-thumb">
-                                        <img src="assets/images/home-2/brand-3.png" alt="Brand 3" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-12">
-                                <div className="single-brand-box">
-                                    <div className="brand-thumb">
-                                        <img src="assets/images/home-2/brand-4.png" alt="Brand 4" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-12">
-                                <div className="single-brand-box">
-                                    <div className="brand-thumb">
-                                        <img src="assets/images/home-2/brand-5.png" alt="Brand 5" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
             {/*==================================================*/}
-            {/* End Toptech Brand Area Style Two */}
+            {/* End Toptech Process Area Style Three */}
             {/*==================================================*/}
         </>
     );

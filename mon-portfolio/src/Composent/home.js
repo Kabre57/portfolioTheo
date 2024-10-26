@@ -8,19 +8,35 @@ function Home() {
             {/*==================================================*/}
             {/* Start Toptech Hero Area Style One */}
             {/*==================================================*/}
-            <div className="hero-area style-one d-flex align-items-center">
+            <div className="hero-area style-two d-flex align-items-center">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-12">
+                        <div className="col-lg-8">
                             <div className="hero-content">
-                                <h4>Welcome To Toptech</h4>
-                                <h1>Top IT Solutions Agency</h1>
-                                <h1>In The World</h1>
-                                <p>And In Order To Make A Business, Brand Advertising And Marketing Plays An Important Role. Similarly, In Making Cultivation Business.</p>
+                                <h4> IT Solution Agency in USA </h4>
+                                <h1> Business Innovation </h1>
+                                <h1> With IT Expert</h1>
+                                <p>
+                                    Professionally optimize interdependent intellectual interoperable connect best practices. Progressively fabricate done
+                                </p>
                             </div>
-                            <div className="hero-button style-one">
-                                <Link to="/Mission">How It Works</Link>
-                                <Link className="button-two" to="/services">IT Services <i className="flaticon flaticon-computer"></i></Link>
+                            <div className="hero-button">
+                                <Link to="/contact" className="button">
+                                    Lets Talk<i className="bi bi-arrow-right"></i>
+                                </Link>
+                                <Link to="/about-1" className="button-two">
+                                    Read More<i className="bi bi-arrow-right"></i>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="hero-right">
+                                <div className="hero-thumb">
+                                    <img src="assets/images/home-2/hero-thumb.png" alt="Illustration de services" />
+                                </div>
+                                <div className="hero-shape">
+                                    <img src="assets/images/home-2/hero-shape.png" alt="Forme décorative" />
+                                </div>
                             </div>
                         </div>
                     </div>

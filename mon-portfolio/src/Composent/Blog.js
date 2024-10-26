@@ -15,7 +15,7 @@ function Blog() {
                 <h4>Blog </h4>
                 <ul>
                   <li><Link to="index.html">Home</Link></li>
-                  <li>&</li>
+                  <li>&gt;</li>
                   <li>Blog </li>
                 </ul>
               </div>

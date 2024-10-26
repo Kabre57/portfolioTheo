@@ -1,111 +1,98 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 
 function Footer() {
-    const [email, setEmail] = useState('');
-
-    const handleSubscribe = (e) => {
-        e.preventDefault();
-        // Logic for subscribing, e.g., sending the email to an API
-        console.log('Subscribed with email:', email);
-        setEmail('');
-    };
-
-    return (
-        <>
-            {/*==================================================*/}
-            {/* Start Toptech Footer Area Style One */}
-            {/*==================================================*/}
-            <div className="footer-area style-foure">
-                <div className="container">
-                    <div className="row footer-top">
-                        <div className="col-lg-6 col-md-6">
-                            <div className="footer-logo">
-                                <Link to="index.html"><img src="assets/images/logo5.png" alt="logo-5" /></Link>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-md-6">
-                            <div className="footer-top-social-icon">
-                                <ul>
-                                    <li><a href="https://www.facebook.com/theo.sasuke"><i className="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="https://twitter.com/theogeoffroy5"><i className="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/theo-kabre-8bb5a5169"><i className="fa-brands fa-linkedin-in"></i></a></li>
-                                    <li><a href="www.pinterest.com/geoffroytheo2"><i className="fa-brands fa-pinterest-p"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row footer-bottom">
-                        <div className="col-lg-3 col-md-6">
-                            <div className="footer-widget-title">
-                                <h4>Company</h4>
-                            </div>
-                            <div className="footer-widget-menu">
-                                <ul>
-                                    <li><Link to="#">Help Center</Link></li>
-                                    <li><Link to="#">Terms & Conditions</Link></li>
-                                    <li><Link to="#">Privacy Policy</Link></li>
-                                    <li><Link to="/Contact">Contact Us</Link></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <div className="footer-widget-content">
-                                <div className="footer-widget-title">
-                                    <h4>Get In Touch</h4>
-                                </div>
-                                <div className="footer-widget-menu">
-                                    <ul>
-                                        <li><i className="fa-solid fa-phone-flip"></i> +225 07 57 39 01 57</li>
-                                        <li><i className="fa-regular fa-envelope"></i> theogeoffroy5@gmail.com</li>
-                                        <li className="footer-descrip">yopognon zone industrielle <br /> abidjan, côte d'ivoire</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <div className="footer-widget-content">
-                                <div className="footer-widget-title">
-                                    <h4>Working Time</h4>
-                                </div>
-                                <div className="footer-widget-menu">
-                                    <ul>
-                                        <li>Mon - Fri: 9:00 AM - 5:00 PM</li>
-                                        <li>Saturday: 10:00 AM - 6:00 PM</li>
-                                        <li>Sunday & Friday Closed</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <div className="footer-widget-content">
-                                <div className="footer-widget-title">
-                                    <h4>Newsletter</h4>
-                                </div>
-                                <p className="f-desc-2">I’m okay with getting emails and having that tracked to improve my experience</p>
-                                <form onSubmit={handleSubscribe}>
-                                    <div className="footer-newslatter-box">
-                                        <input 
-                                            type="email" 
-                                            name="Email" 
-                                            placeholder="Your E-Mail" 
-                                            value={email}
-                                            onChange={(e) => setEmail(e.target.value)}
-                                            required 
-                                        />
-                                        <button type="submit">SIGN UP</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div className="footer-area style-one">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-4 col-md-6">
+            <div className="footer-logo">
+              <a href="/">
+                <img src="assets/images/logo-2.png" alt="Logo" />
+              </a>
             </div>
-            {/*==================================================*/}
-            {/* End Toptech Footer Area */}
-            {/*==================================================*/}
-        </>
-    );
+            <div className="footer-widget-desc">
+              <p>
+                Monotonectally synergize granular top visualize strategic infomediaries afters
+                task state of the art infrastructures digital agency in north
+              </p>
+            </div>
+            <div className="toptech-button inner-style">
+              <a href="/About">Discover More<i className="bi bi-arrow-right-short"></i></a>
+            </div>
+          </div>
+          <div className="col-lg-2 col-md-6">
+            <div className="footer-widget-content">
+              <div className="footer-widget-title">
+                <h4>Company</h4>
+              </div>
+              <div className="footer-widget-menu">
+                <ul>
+                  <li><a href="/About"><i className="bi bi-arrow-right-circle"></i>About</a></li>
+                  <li><a href="/Team"><i className="bi bi-arrow-right-circle"></i>Our Team</a></li>
+                  <li><a href="/Pricing"><i className="bi bi-arrow-right-circle"></i>Pricing Plan</a></li>
+                  <li><a href="/Blog"><i className="bi bi-arrow-right-circle"></i>Latest Blog</a></li>
+                  <li><a href="/Careers"><i className="bi bi-arrow-right-circle"></i>Careers</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6">
+            <div className="footer-widget-content">
+              <div className="footer-widget-title">
+                <h4>Our Services</h4>
+              </div>
+              <div className="footer-widget-menu">
+                <ul>
+                  <li><a href="/Pricing"><i className="bi bi-arrow-right-circle"></i>IT Solutions</a></li>
+                  <li><a href="/Pricing"><i className="bi bi-arrow-right-circle"></i>Cyber Security</a></li>
+                  <li><a href="/Pricing"><i className="bi bi-arrow-right-circle"></i>Digital Marketing</a></li>
+                  <li><a href="/Pricing"><i className="bi bi-arrow-right-circle"></i>Brand Identity</a></li>
+                  <li><a href="/Pricing"><i className="bi bi-arrow-right-circle"></i>SEO Marketing</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6">
+            <div className="footer-widget-content">
+              <div className="footer-widget-title">
+                <h4>Newsletter</h4>
+              </div>
+              <p className="f-desc-2">Subscribe to our Latest Newsletter</p>
+              <form action="#">
+                <div className="footer-newslatter-box">
+                  <input type="text" name="Email" placeholder="Enter Your E-Mail" required />
+                  <button type="submit">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div className="row align-items-center">
+          <div className="footer-bottom-area">
+            <div className="row">
+              <div className="col-lg-6 col-md-6">
+                <div className="footer-bottom-content">
+                  <p>© 2024 Toptech. Designed by Dream IT Solution</p>
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-6">
+                <div className="footer-botton-social-icon">
+                  <ul>
+                  <li className="time-line"><i className="bi bi-alarm"></i>9.10 am - 5.30 pm</li>
+                  <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-twitter"></i></a></li>
+                  <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin-in"></i></a></li>
+                  <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-pinterest-p"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Footer;

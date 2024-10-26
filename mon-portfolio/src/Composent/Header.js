@@ -1,52 +1,48 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function Header() {
+function Header({ initialClass }) {
+    const [isSticky, setIsSticky] = useState(false);
+
     useEffect(() => {
         const handleScroll = () => {
-            const header = document.getElementById('sticky-header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
+            setIsSticky(window.scrollY > 50);
         };
 
         window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, []);
 
     return (
-        <>
-            <header style={{ marginBottom: '20px' }}> {/* Ajustez la valeur comme besoin */}
-
+        <div className={`header-area  ${initialClass} ${isSticky ? 'sticky' : ''}`} id="sticky-header">
             {/*==================================================*/}
             {/* Start Toptech Header Area */}
             {/*==================================================*/}
-            <div className="header-area" id="sticky-header">
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-3">
-                            <div className="header-logo">
-                                <Link to="/"><img src="assets/images/logo-1.png" alt="logo" /></Link>
-                            </div>
+            <div className="container">
+                <div className="row align-items-center">
+                    <div className="col-lg-3">
+                        <div className="header-logo">
+                            <Link to="/">
+                                <img src="assets/images/logo-1.png" alt="logo" />
+                            </Link>
                         </div>
-                        <div className="col-lg-9">
-                            <div className="header-menu">
-                                <ul>
-                                    <li><Link to="/">Home</Link></li>
-                                    <li><Link to="/About">About</Link></li>
-                                    <li><Link to="/Services">Service</Link></li>
-                                    <li><Link to="/Mission">Mission</Link></li>
-                                    <li><Link to="/Blog">Blog</Link></li>
-                                    <li><Link to="/contact">Contact</Link></li>
-                                </ul>
-                                <div className="header-search-icon search-box-outer">
-                                    <Link to="/"><i className="fa-solid fa-magnifying-glass"></i></Link>
-                                </div>
-                                <div className="header-button">
-                                    <Link to="/contact">Get A Quote</Link>
-                                </div>
+                    </div>
+                    <div className="col-lg-9">
+                        <div className="header-menu">
+                            <ul>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/About">About</Link></li>
+                                <li><Link to="/Mission">Mission</Link></li>
+                                <li><Link to="/Blog">Blog</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
+                            </ul>
+                            <div className="header-search-icon search-box-outer">
+                                <Link to="#"><i className="fa-solid fa-magnifying-glass"></i></Link>
+                            </div>
+                            <div className="header-button">
+                                <Link to="/contact">Get A Quote</Link>
                             </div>
                         </div>
                     </div>
@@ -65,7 +61,6 @@ function Header() {
                         <ul className="nav_scroll">
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/About">About</Link></li>
-                            <li><Link to="/Services">Service</Link></li>
                             <li><Link to="/Mission">Mission</Link></li>
                             <li><Link to="/Blog">Blog</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
@@ -76,8 +71,7 @@ function Header() {
             {/*==================================================*/}
             {/* End Main Menu Area */}
             {/*==================================================*/}
-            </header>
-        </>
+        </div>
     );
 }
 

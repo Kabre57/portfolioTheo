@@ -5,19 +5,18 @@ function PrivacyTerms() {
   return (
     <>
       {/*==================================================*/}
-      {/* Start Toptech Breadcrumb Area */}
+      {/* Start Toptech Breadcumb Area */}
       {/*==================================================*/}
-      <div className="breadcrumb-area">
+      <div className="breadcumb-area">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <div className="breadcrumb-content">
-                <h4>Privacy & Terms</h4>
+              <div className="breadcumb-content">
+                <h4>Privacy & Terms </h4>
                 <ul>
-                  <li>
-                    <Link to="/">Home</Link>
-                  </li>
-                  <li>Privacy & Terms</li>
+                  <li><Link to="index.html">Home</Link></li>
+                  <li>&gt;</li>
+                  <li>Privacy & Terms </li>
                 </ul>
               </div>
             </div>
@@ -25,79 +24,79 @@ function PrivacyTerms() {
         </div>
       </div>
       {/*==================================================*/}
-      {/* End Toptech Breadcrumb Area */}
+      {/* End Toptech Breadcumb Area */}
       {/*==================================================*/}
 
       {/*==================================================*/}
-      {/* Start Toptech Images Inner Style One */}
+      {/* Start Privacy Policy Section */}
       {/*==================================================*/}
-      <div className="images-inner-style-one">
+      <div className="privacy-policy-area">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="content">
-                <h2>Privacy Policy</h2>
-                <p>
-                  This privacy policy outlines how we handle your personal
-                  information. Your privacy is important to us, and we are
-                  committed to protecting your information.
-                </p>
-                <h3>Information We Collect</h3>
-                <p>
-                  We may collect personal information such as your name, email
-                  address, and phone number when you use our services.
-                </p>
-                <h3>How We Use Your Information</h3>
-                <p>
-                  Your information helps us provide better services and improve
-                  user experience. We may use your information for marketing
-                  purposes with your consent.
-                </p>
-                <h3>Data Security</h3>
-                <p>
-                  We implement various security measures to protect your personal
-                  information from unauthorized access.
-                </p>
-                <h3>Changes to This Policy</h3>
-                <p>
-                  We may update this privacy policy from time to time. We will
-                  notify you of any changes by posting the new policy on this
-                  page.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/*==================================================*/}
-      {/* End Toptech Images Inner Style One */}
-      {/*==================================================*/}
+          <h1>Politique de Confidentialité</h1>
+          <p>
+            Cette politique de confidentialité décrit comment nous collectons, utilisons, et protégeons vos informations personnelles lorsque vous utilisez notre site web.
+          </p>
 
-      {/*==================================================*/}
-      {/* Start Toptech Subscribe Area Style Three */}
-      {/*==================================================*/}
-      <div className="subscribe-area style-three">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div className="section-title left inner-style">
-                <h1>Get Latest Update from Toptech</h1>
-                <h1>Stay Connected with Us</h1>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <form action="#">
-                <div className="single-subscribe-box">
-                  <input type="text" name="Email" placeholder="Enter your Email" required />
-                  <button type="submit">Subscribe</button>
-                </div>
-              </form>
-            </div>
-          </div>
+          <h2>1. Informations Collectées</h2>
+          <p>
+            Nous pouvons collecter les types d'informations suivants :
+            <ul>
+              <li>Informations personnelles (nom, e-mail, téléphone, etc.)</li>
+              <li>Données de navigation (cookies, adresses IP, etc.)</li>
+              <li>Informations de paiement (si applicable)</li>
+            </ul>
+          </p>
+
+          <h2>2. Utilisation des Informations</h2>
+          <p>
+            Nous utilisons vos informations pour :
+            <ul>
+              <li>Améliorer notre service et personnaliser votre expérience</li>
+              <li>Communiquer avec vous</li>
+              <li>Envoyer des mises à jour et des offres promotionnelles</li>
+            </ul>
+          </p>
+
+          <h2>3. Partage des Informations</h2>
+          <p>
+            Nous ne partageons pas vos informations personnelles avec des tiers, sauf dans les cas suivants :
+            <ul>
+              <li>Avec votre consentement</li>
+              <li>Pour respecter la loi ou protéger nos droits</li>
+            </ul>
+          </p>
+
+          <h2>4. Sécurité des Données</h2>
+          <p>
+            Nous prenons des mesures de sécurité appropriées pour protéger vos informations personnelles contre les accès non autorisés, la divulgation, l'altération ou la destruction.
+          </p>
+
+          <h2>5. Vos Droits</h2>
+          <p>
+            Vous avez le droit de :
+            <ul>
+              <li>Accéder à vos informations personnelles</li>
+              <li>Demander la rectification de vos données</li>
+              <li>Demander l'effacement de vos données</li>
+              <li>Vous opposer au traitement de vos données</li>
+            </ul>
+          </p>
+
+          <h2>6. Modifications de la Politique</h2>
+          <p>
+            Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Les modifications seront publiées sur cette page.
+          </p>
+
+          <h2>7. Contact</h2>
+          <p>
+            Si vous avez des questions concernant cette politique, vous pouvez nous contacter à :
+            <br />
+            <strong>Email :</strong> support@votreentreprise.com
+          </p>
         </div>
       </div>
       {/*==================================================*/}
-      {/* End Toptech Subscribe Area Style Three */}
+      {/* End Privacy Policy Section */}
       {/*==================================================*/}
     </>
   );

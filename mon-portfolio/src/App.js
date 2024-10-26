@@ -9,11 +9,12 @@ import About from "./Composent/About";
 import Services from "./Composent/Services";
 import Blog from "./Composent/Blog";
 import Faqs from "./Composent/Faqs";
+import Pricing from "./Composent/Pricing";
+import Careers from "./Composent/Careers";
 import PrivacyTerms from "./Composent/PrivacyTerms";
 import Team from "./Composent/Team";
 import Contact from "./Composent/Contact";
 import Footer from "./Composent/Footer";
-import Copyright from "./Composent/Copyright";
 
 import "./App.css";
 
@@ -21,7 +22,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header className="header-spacing" />
+        {/* Header avec classe initiale par défaut */}
+        <Header initialClass="inner-style" />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
@@ -31,10 +33,11 @@ function App() {
           <Route path="/PrivacyTerms" element={<PrivacyTerms />} />
           <Route path="/Team" element={<Team />} />
           <Route path="/Blog" element={<Blog />} />
+          <Route path="/Pricing" element={<Pricing />} />
+          <Route path="/Careers" element={<Careers />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
         <Footer />
-        <Copyright />
         <ScrollIndicator />
       </Router>
     </div>
