@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Header from "./Composent/Header";
+import MobileHeader from "./Composent/MobileHeader";
 import Home from "./Composent/Home";
 import ScrollIndicator from "./Composent/ScrollIndicator";
 import Mission from "./Composent/Mission";
@@ -24,6 +25,8 @@ function App() {
       <Router>
         {/* Header avec classe initiale par défaut */}
         <Header initialClass="inner-style" />
+        <MobileHeader />
+        <ScrollIndicator />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
@@ -38,7 +41,6 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
         </Routes>
         <Footer />
-        <ScrollIndicator />
       </Router>
     </div>
   );
